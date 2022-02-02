@@ -8,9 +8,7 @@ pacman -Sy gdm gnome-session gnome-control-center gnome-tweaks gnome-terminal na
 
 # Disable suspend when laptop lid is closed
 	
-cd ~
-mkdir .config
-cd ".config"
+cd .config
 mkdir autostart
 cd autostart
 cat << EOF | tee > ignore-lid-switch-tweak.desktop
