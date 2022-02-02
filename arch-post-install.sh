@@ -19,9 +19,9 @@
 	Name=ignore-lid-switch-tweak
 	Exec=/usr/lib/gnome-tweak-tool-lid-inhibitor
 	EOF
-	
+
 	# Change default mouse acceleration profile to flat
-	
+
 	cat << EOF | tee > mouse-profile-flat.desktop
 	[Desktop Entry]
 	Type=Application
