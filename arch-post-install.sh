@@ -4,29 +4,6 @@
 
 pacman -Sy gdm gnome-session gnome-control-center gnome-tweaks gnome-terminal nautilus gedit eog evince fish gnome-boxes chromium libreoffice-fresh gimp rawtherapee papirus-icon-theme
 
-### Default gnome settings
-
-# Disable suspend when laptop lid is closed
-	
-cd .config
-mkdir autostart
-cd autostart
-cat << EOF | tee > ignore-lid-switch-tweak.desktop
-[Desktop Entry]
-Type=Application
-Name=ignore-lid-switch-tweak
-Exec=/usr/lib/gnome-tweak-tool-lid-inhibitor
-EOF
-
-# Change default mouse acceleration profile to flat
-
-cat << EOF | tee > mouse-profile-flat.desktop
-[Desktop Entry]
-Type=Application
-Name=mouse-profile-flat
-Exec=gsettings  set  org.gnome.desktop.peripherals.mouse  accel-profile  flat
-EOF
-
 ### Enable services
 
 systemctl enable gdm
