@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=mouse-profile-flat
+Exec=gsettings  set  org.gnome.desktop.peripherals.mouse  accel-profile  flat
+
