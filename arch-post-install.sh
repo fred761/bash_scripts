@@ -76,7 +76,7 @@
 	cd yay
 	makepkg -si
 
-	# Install additional software from the arch user reposirtory
+	# Install additional software from the arch user repository
 	
 	yay -S reaper-bin
 
