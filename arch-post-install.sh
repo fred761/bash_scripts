@@ -33,6 +33,7 @@
 
 	systemctl enable gdm
 	systemctl enable bluetooth
+	systemctl enable libvritd
 
 ### Set the governor to performance
 
