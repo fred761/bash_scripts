@@ -64,14 +64,3 @@ EOF
 # Start service
 
 systemctl enable performance_gov.service
-
-### Install Yay
-
-pacman -Sy --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-# Install additional software from the arch user repository
-
-yay -Sy reaper-bin
