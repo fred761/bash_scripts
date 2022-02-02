@@ -2,7 +2,7 @@
 
 ### Install minimal gnome session with additional frequently used applications. This script assumes that "archinstall" was used with the default xorg profile.
 
-pacman -Sy gdm gnome-session gnome-control-center gnome-tweaks gnome-terminal gedit eog evince fish gnome-boxes virt-manager dnsmasq ntfs-3g chromium libreoffice-fresh gimp rawtherapee papirus-icon-theme
+pacman -Sy gdm gnome-session gnome-control-center gnome-tweaks gnome-terminal gedit eog evince fish gnome-boxes chromium libreoffice-fresh gimp rawtherapee papirus-icon-theme
 
 ### Default gnome settings
 
@@ -33,8 +33,6 @@ EOF
 
 systemctl enable gdm
 systemctl enable bluetooth
-systemctl enable libvritd
-systemctl enable dnsmasq
 
 ### Set the governor to performance
 
