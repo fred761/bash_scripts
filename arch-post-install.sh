@@ -2,7 +2,7 @@
 
 ### Install minimal gnome session with additional frequently used applications. This script assumes that "archinstall" was used with the default xorg profile.
 
-pacman -Sy gdm gnome-session gnome-control-center gnome-tweaks gnome-terminal nautilus gedit eog evince fish htop gnome-boxes chromium libreoffice-fresh gimp rawtherapee papirus-icon-theme
+pacman -Sy gdm gnome-session gnome-control-center gnome-tweaks gnome-terminal nautilus gedit mc eog evince fish htop gnome-boxes chromium libreoffice-fresh gimp rawtherapee papirus-icon-theme
 
 ### Enable services
 
