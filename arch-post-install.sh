@@ -9,6 +9,10 @@ pacman -S gdm gnome-session gnome-control-center gnome-tweaks gnome-terminal nau
 systemctl enable gdm
 systemctl enable bluetooth
 
+### Add user to realtime group
+
+usermod -aG realtime user
+
 ### Set the governor to performance
 
 # Create new bash script in /usr/bin
